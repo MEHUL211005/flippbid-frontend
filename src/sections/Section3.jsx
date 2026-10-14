@@ -1,0 +1,153 @@
+
+import Vector from "../assets/Vector 2.png";
+import LaptopImg from "../assets/LaptopImg.png";
+import Silver from "../assets/Silver.png";
+import Mockup from "../assets/Mockup.png";
+import HutIcon from "../assets/hutIcon.png";
+import HutSearch from "../assets/hutSearch.png";
+import HutRect from "../assets/HutRect.png";
+import HutTick from "../assets/HutBlueTick.png";
+import HandImg from "../assets/HandImg.png";
+function Section3() {
+  const featuresList = [
+    "Source Off-Market Deals",
+    "Polygon Lead Search",
+    "Showcase Your Investments",
+    "Property Data & Comps",
+    "Network - In App Calls/Messaging",
+    "FlippBidd One Touch",
+    "National Skiptracing, and More...",
+  ];
+  return (
+    <div className="relative w-full lg:min-h-[700px] xl:h-[518px]">
+      <div className="relative w-full px-5 py-12 sm:px-8 lg:h-[700px] lg:px-8 lg:py-0 xl:h-0 xl:p-0">
+        {/* ============ TITLE ============ */}
+        <div className="flex flex-wrap items-baseline justify-center gap-x-2 text-center sm:gap-x-3 lg:justify-start lg:text-left xl:block">
+          <div className="flex items-baseline gap-x-2 sm:gap-x-3 lg:absolute lg:top-[32px] lg:left-[32px] lg:gap-x-[10px] xl:top-[50px] xl:left-[100px] xl:gap-x-[14px] 2xl:left-[calc(50%-558px)]">
+            <p className="font-bold bg-gradient-to-r from-[#003F79] to-[#00ACDB] bg-clip-text text-transparent text-[28px] sm:text-[32px] xl:text-[32px]">
+              FlipBidd
+            </p>
+            <p className="text-[28px] sm:text-[32px] font-bold text-[#575665] xl:text-[32px]">
+              Key
+            </p>
+          </div>
+          <p className="text-[23px] sm:text-[28px] font-bold text-[#575665] basis-full lg:absolute lg:top-[80px] lg:left-[32px] xl:basis-auto xl:top-[98px] xl:left-[100px] xl:text-[28px] 2xl:left-[calc(50%-558px)]">
+            Features
+          </p>
+        </div>
+
+        {/* ============ FEATURE LIST ============ */}
+        <div className="mx-auto mt-6 flex w-full max-w-[450px] flex-col gap-3 lg:absolute lg:mx-0 lg:mt-0 lg:top-[125px] lg:left-[32px] lg:w-[44%] lg:max-w-none lg:gap-3 xl:top-[150px] xl:left-[80px] xl:w-[650px] xl:gap-4 2xl:left-[calc(50%-578px)]">
+          {featuresList.map((item, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-[14px] w-full h-[62px] px-4 flex items-center gap-4 shadow-[0_4px_12px_rgba(0,0,0,0.06)] xl:w-[450px] xl:h-[71px] xl:px-0 xl:gap-5"
+            >
+              <img
+                src={Vector}
+                alt="Vector Icon"
+                className="w-[18px] h-[18px] shrink-0"
+              />
+              <h3 className="text-[#1C1A1B] font-medium text-[14px] sm:text-[15px] xl:text-[16px]">
+                {item}
+              </h3>
+            </div>
+          ))}
+        </div>
+
+        {/* ============ ARTWORK ============ */}
+        <div className="relative mt-8 h-[283px] w-full overflow-hidden sm:h-[480px] sm:mt-10 md:h-[565px] md:mt-12 lg:absolute lg:mt-0 lg:top-[125px] lg:right-[80px] lg:h-[430px] lg:w-[44%] lg:overflow-visible xl:left-[620px] xl:right-auto xl:top-[150px] xl:h-[565px] xl:w-[615px] 2xl:left-[calc(50%-38px)]">
+          <div className="absolute left-1/2 top-0 w-[615px] h-[565px] -translate-x-1/2 origin-top scale-[0.5] sm:scale-[0.85] md:scale-100 lg:left-0 lg:translate-x-0 lg:scale-[0.68] xl:scale-100">
+            {/* Gradient circle */}
+            <div className="rounded-[50%] absolute top-[30px] left-[30px] h-[518px] w-[518px] bg-gradient-to-r from-[#A6F0F7]  to-[#FDE3FA]">
+              <div className="bg-black h-[278px] w-[453px] absolute top-[120px] left-[34px] flex items-center justify-center">
+                <img
+                  src={LaptopImg}
+                  alt="LaptopImg"
+                  className="h-[250px] w-[430px]"
+                />
+              </div>
+              <div className="absolute top-[70px] left-[340px] w-[220px] h-[55px] bg-gradient-to-r from-[#003F79] to-[#00ACDB] rounded-[14px] z-0 flex items-center justify-center">
+                <div className="absolute top-[1px] left-[1px] bg-white rounded-[13px] w-[218px] h-[53px] flex items-center justify-center">
+                  <p className="text-[#00ACDB] text-[19px] font-semibold">
+                    FlippBidd One Touch
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/* Sell My Deal */}
+            <div className="absolute top-[102px] left-[0px] w-[196px] h-[55px] border border-[#00ACDB] rounded-[14px] flex items-center justify-center bg-white">
+              <p className="text-[#00ACDB]">Sell My Deal</p>
+            </div>
+            {/* Mobile mockup */}
+            <div
+              className="absolute top-[230px] left-[410px] w-[132px] h-[261px] bg-cover bg-center bg-no-repeat flex items-center justify-center"
+              style={{ backgroundImage: `url(${Silver})` }}
+            >
+              <img
+                src={Mockup}
+                alt="Mockup"
+                className="w-[118px] h-[256px] object-contain"
+              />
+            </div>
+            {/* Contract Holders */}
+            <div className="absolute top-[400px] left-[430px] w-[190px] h-[50px] bg-gradient-to-r from-[#C830EB] to-[#00ACDB] rounded-[14px] z-0 flex items-center justify-center">
+              <div className="absolute top-[1px] left-[1px] bg-white rounded-[13px] w-[188px] h-[47px] flex items-center justify-center">
+                <p className="text-[#00ACDB] text-[17px] bg-gradient-to-l from-[#00ACDB] to-[#C830EB] bg-clip-text text-transparent">
+                  Contract Holders
+                </p>
+              </div>
+            </div>
+            {/* Find My Lead */}
+            <div className="absolute top-[510px] left-[100px] border border-[#575665] bg-white rounded-[13px] w-[196px] h-[55px] flex items-center justify-center">
+              <p className="text-[#00ACDB] text-[17px] bg-gradient-to-r from-[#9AA1AB] to-[#575665] bg-clip-text text-transparent">
+                Find My Lead
+              </p>
+            </div>
+            {/* HutIcon */}
+            <div className="absolute rounded-[50%] bg-white h-[65px] w-[65px] top-[326px] left-[550px] shadow-[0px_10.85px_43.38px_rgba(219,222,225,1)] realtive">
+              <img
+                src={HutIcon}
+                alt="HutIcon"
+                className="object-contain absolute left-[8px] top-[7px]"
+              />
+            </div>
+            {/* HutSearch */}
+            <div className="absolute rounded-[50%] bg-white h-[65px] w-[65px] top-[400px] left-[100px] realtive">
+              <img
+                src={HutSearch}
+                alt="HutSearch"
+                className="object-contain absolute left-[10px] top-[10px]"
+              />
+            </div>
+            {/* HutRect */}
+            <div className="absolute rounded-[50%] bg-white h-[65px] w-[65px] top-[30px] left-[120px] realtive">
+              <img
+                src={HutRect}
+                alt="HutRect"
+                className="object-contain absolute left-[8px] top-[7px] "
+              />
+            </div>
+            {/* One Touch */}
+            <div className="absolute rounded-[50%] bg-white h-[80px] w-[80px] top-[10px] left-[380px] flex items-center justify-center">
+              <div className="rounded-[50%] bg-gradient-to-r from-[#003F79] to-[#00ACDB] h-[70px] w-[70px]">
+                <img
+                  src={HutTick}
+                  alt="HutSearch"
+                  className="object-contain absolute h-[35px] left-[14px] top-[13px] "
+                />
+                <img
+                  src={HandImg}
+                  alt="HandImg"
+                  className="object-contain absolute h-[35px] left-[30px] top-[36px] "
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Section3;

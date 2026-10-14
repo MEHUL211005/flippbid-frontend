@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap');
+@import "tailwindcss";
+@theme {
+  --font-alkatra: "Alkatra", cursive;
+}
+
+/* Decorative artwork in several sections is positioned with fixed pixel
+   offsets that bleed past narrow viewports. Clip it instead of letting the
+   document scroll sideways. `clip` (not `hidden`) keeps position: sticky working. */
+html,
+body {
+  overflow-x: clip;
+}
+button {
+  cursor: pointer;
+}
